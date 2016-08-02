@@ -12,7 +12,7 @@ public class CrawlCommit {
 		String email = "";
 		String date = "";
 		boolean judge = false;
-		int diffCount = 0;		
+		int diffCount = 0;
 		try {
 			Process process = Runtime.getRuntime().exec("git show bae3490e18dd67c71c98dc037d36f91d2424e8e0",null,new File("C:/Users/i331307/mysql/141250216_cseiii/AwesomeProject"));
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream(),"utf-8"));
@@ -62,4 +62,3 @@ public class CrawlCommit {
 		System.out.println(fileNumber);
 	}
 }
-
